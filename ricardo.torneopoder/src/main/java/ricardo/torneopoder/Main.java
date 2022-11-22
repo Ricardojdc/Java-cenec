@@ -9,9 +9,7 @@ public class Main {
 		byte taks = 2;
 		boolean ganador = true;
 		Random rand = new Random();
-		byte[] luchadores = { 0, 0 };
 		int[] poderAux = { 0, 0 };
-		String[] classAux = {"",""};
 		Luchador[] auxLuchador = new Luchador[2];
 		
 
@@ -43,21 +41,14 @@ public class Main {
 
 		
 		while (taks > 0 && ganador) {
-			
-
-	
+				
 			auxLuchador[0] = eq.equipo.get(rand.nextInt(eq.equipo.size()));
 			auxLuchador[1] = eq2.equipo.get(rand.nextInt(eq.equipo.size()));
-				
-			classAux[0] = eq.equipo.get(luchadores[0]).getClass().getSimpleName();
-			
-			
+									
 			System.out.println(auxLuchador[0]);
 			System.out.println(auxLuchador[1]);
 			
 			
-		
-
 			if(auxLuchador[0].getClass().getSimpleName().compareTo("Namekiano")== 0) {
 				
 				poderAux[0] = (((Namekiano) auxLuchador[0]).getMasenko()+((Namekiano) auxLuchador[0]).getAtaqueFisico());
@@ -70,7 +61,7 @@ public class Main {
 
 			taks--;
 		}
-		System.out.println(piccolo.getPuntosVidaActual());
+		
 
 	}
 
