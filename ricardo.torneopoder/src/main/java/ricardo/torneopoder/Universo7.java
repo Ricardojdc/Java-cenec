@@ -18,6 +18,14 @@ public class Universo7 extends Luchador {
 		return "\nUniverso7 ki=" + ki + ", nombre=" + nombre + ", puntosVida=" + puntosVida + ", ataqueFisico="
 				+ ataqueFisico + ", resistencia=" + resistencia;
 	}
+
+	public int getKi() {
+		return ki;
+	}
+
+	public void setKi(int ki) {
+		this.ki = ki;
+	}
 	
 
 }

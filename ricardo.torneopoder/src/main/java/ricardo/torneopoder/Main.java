@@ -49,15 +49,32 @@ public class Main {
 			System.out.println(auxLuchador[1]);
 			
 			
+			poderAux[0] = Funciones.devolverPoder(auxLuchador[0]);
+			System.out.println(poderAux[0]);
+			
+			
+			/*
 			if(auxLuchador[0].getClass().getSimpleName().compareTo("Namekiano")== 0) {
 				
 				poderAux[0] = (((Namekiano) auxLuchador[0]).getMasenko()+((Namekiano) auxLuchador[0]).getAtaqueFisico());
 				System.out.println(poderAux[0]);
 				((Namekiano)auxLuchador[0]).setPuntosVidaActual(200);
 		
+			}if(auxLuchador[0].getClass().getSimpleName().compareTo("Universo7")== 0){
+				
+				poderAux[0] = (((Namekiano) auxLuchador[0]).getMasenko()+((Namekiano) auxLuchador[0]).getAtaqueFisico());
+				
+			}
+			if(auxLuchador[0].getClass().getSimpleName().compareTo("Universo6")== 0){
+				
+				poderAux[0] = (((Namekiano) auxLuchador[0]).getMasenko()+((Namekiano) auxLuchador[0]).getAtaqueFisico());
+			}
+			if(auxLuchador[0].getClass().getSimpleName().compareTo("DemonioFrio")== 0){
+				
+				poderAux[0] = (((Namekiano) auxLuchador[0]).getMasenko()+((Namekiano) auxLuchador[0]).getAtaqueFisico());
 			}
 			
-
+*/
 
 			taks--;
 		}
