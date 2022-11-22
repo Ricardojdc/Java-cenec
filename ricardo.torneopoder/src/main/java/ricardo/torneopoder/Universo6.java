@@ -15,6 +15,14 @@ public class Universo6 extends Universo7 {
 				+ ataqueFisico + ", resistencia=" + resistencia;
 	}
 
+	public byte[] getEstado() {
+		return estado;
+	}
+
+	public void setEstado(byte[] estado) {
+		this.estado = estado;
+	}
+
 	
 
 	

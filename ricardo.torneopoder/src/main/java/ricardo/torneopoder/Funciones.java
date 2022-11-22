@@ -8,6 +8,7 @@ public class Funciones {
 		
 		if(lu.getClass().getSimpleName().compareTo("Namekiano")== 0) {
 			
+			
 			return(((Namekiano) lu).getMasenko()+((Namekiano) lu).getAtaqueFisico());
 			
 	
@@ -25,6 +26,13 @@ public class Funciones {
 			return(((DemonioFrio) lu).getKi()+((DemonioFrio) lu).getAtaqueFisico());
 		}
 		return 0;
+		
+	}
+	
+	
+	
+	public static void pelear(Luchador lu, int poder,String tipolu,Luchador lu2, int poder2, String tipolu2) {
+		
 		
 		
 		

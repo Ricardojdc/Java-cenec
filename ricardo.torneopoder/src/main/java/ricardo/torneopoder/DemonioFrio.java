@@ -17,6 +17,16 @@ public class DemonioFrio extends Universo7 {
 		return "\nDemonioFrio ki=" + ki + ", nombre=" + nombre + ", puntosVida="
 				+ puntosVida + ", ataqueFisico=" + ataqueFisico + ", resistencia=" + resistencia;
 	}
+
+
+	public byte[] getEstado() {
+		return estado;
+	}
+
+
+	public void setEstado(byte[] estado) {
+		this.estado = estado;
+	}
 	
 	
 

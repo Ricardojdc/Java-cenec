@@ -5,7 +5,6 @@ public class Luchador {
 	String nombre;
 	int puntosVida;
 	int puntosVidaActual;
-	
 	int ataqueFisico;
 	int resistencia;
 	public Luchador() {

@@ -12,6 +12,20 @@ public class Universo7 extends Luchador {
 		this.ki = ki;
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+
+	public byte[] getEstado() {
+		return estado;
+	}
+
+
+
+	public void setEstado(byte[] estado) {
+		this.estado = estado;
+	}
+
+
 
 	@Override
 	public String toString() {

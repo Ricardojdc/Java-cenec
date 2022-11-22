@@ -9,9 +9,7 @@ public class Main {
 		byte taks = 2;
 		boolean ganador = true;
 		Random rand = new Random();
-		int[] poderAux = { 0, 0 };
 		Luchador[] auxLuchador = new Luchador[2];
-		
 
 		// Equipo 1
 
@@ -36,50 +34,29 @@ public class Main {
 		eq2.addLuchador(frost);
 		eq2.addLuchador(caulifla);
 		eq2.addLuchador(kale);
+	
 
 		// Comienzo del torneo
 
-		
 		while (taks > 0 && ganador) {
-				
+
 			auxLuchador[0] = eq.equipo.get(rand.nextInt(eq.equipo.size()));
 			auxLuchador[1] = eq2.equipo.get(rand.nextInt(eq.equipo.size()));
-									
+
 			System.out.println(auxLuchador[0]);
 			System.out.println(auxLuchador[1]);
-			
-			
-			poderAux[0] = Funciones.devolverPoder(auxLuchador[0]);
-			System.out.println(poderAux[0]);
-			
-			
-			/*
-			if(auxLuchador[0].getClass().getSimpleName().compareTo("Namekiano")== 0) {
-				
-				poderAux[0] = (((Namekiano) auxLuchador[0]).getMasenko()+((Namekiano) auxLuchador[0]).getAtaqueFisico());
-				System.out.println(poderAux[0]);
-				((Namekiano)auxLuchador[0]).setPuntosVidaActual(200);
-		
-			}if(auxLuchador[0].getClass().getSimpleName().compareTo("Universo7")== 0){
-				
-				poderAux[0] = (((Namekiano) auxLuchador[0]).getMasenko()+((Namekiano) auxLuchador[0]).getAtaqueFisico());
-				
-			}
-			if(auxLuchador[0].getClass().getSimpleName().compareTo("Universo6")== 0){
-				
-				poderAux[0] = (((Namekiano) auxLuchador[0]).getMasenko()+((Namekiano) auxLuchador[0]).getAtaqueFisico());
-			}
-			if(auxLuchador[0].getClass().getSimpleName().compareTo("DemonioFrio")== 0){
-				
-				poderAux[0] = (((Namekiano) auxLuchador[0]).getMasenko()+((Namekiano) auxLuchador[0]).getAtaqueFisico());
-			}
-			
-*/
 
+			Funciones.pelear(auxLuchador[0], Funciones.devolverPoder(auxLuchador[0]),
+					auxLuchador[0].getClass().getSimpleName(), auxLuchador[1], Funciones.devolverPoder(auxLuchador[1]),
+					auxLuchador[1].getClass().getSimpleName());
+					
+					
+					
 			taks--;
 		}
-		
 
+		
+		
 	}
 
 }
