@@ -3,7 +3,7 @@ package ricardo.torneopoder;
 public class Universo7 extends Luchador {
 	
 	int ki;
-	String[] estado ={"Forma base x1","Ssj x2","Ssj2 x4","Ssj dios rojo x20","Ssj dios azul x100"};
+	byte[] estado ={1,2,4,20,100};
 
 	
 	
@@ -16,7 +16,7 @@ public class Universo7 extends Luchador {
 	@Override
 	public String toString() {
 		return "\nUniverso7 ki=" + ki + ", nombre=" + nombre + ", puntosVida=" + puntosVida + ", ataqueFisico="
-				+ ataqueFisico + ", resistencia=" + resistencia + "";
+				+ ataqueFisico + ", resistencia=" + resistencia;
 	}
 	
 

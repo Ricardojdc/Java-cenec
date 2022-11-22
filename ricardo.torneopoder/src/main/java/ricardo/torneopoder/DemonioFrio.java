@@ -2,7 +2,7 @@ package ricardo.torneopoder;
 
 public class DemonioFrio extends Universo7 {
 	
-	String[] estado ={"Forma base x1","Forma golden x120"};
+	byte[] estado ={1,120};
 
 	public DemonioFrio(String nombre, int puntosVida, int ataqueFisico, int resistencia, int ki) {
 		super(nombre, puntosVida, ataqueFisico, resistencia, ki);
@@ -12,7 +12,7 @@ public class DemonioFrio extends Universo7 {
 	@Override
 	public String toString() {
 		return "\nDemonioFrio ki=" + ki + ", nombre=" + nombre + ", puntosVida="
-				+ puntosVida + ", ataqueFisico=" + ataqueFisico + ", resistencia=" + resistencia + "";
+				+ puntosVida + ", ataqueFisico=" + ataqueFisico + ", resistencia=" + resistencia;
 	}
 	
 	

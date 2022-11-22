@@ -5,16 +5,13 @@ public class Luchador {
 	String nombre;
 	int puntosVida;
 	int puntosVidaActual;
-	public int getPuntosVidaActual() {
-		return puntosVidaActual;
-	}
-
-	public void setPuntosVidaActual(int puntosVidaActual) {
-		this.puntosVidaActual = puntosVidaActual;
-	}
-
+	
 	int ataqueFisico;
 	int resistencia;
+	public Luchador() {
+		
+		
+	}
 	
 	public Luchador(String nombre, int puntosVida, int ataqueFisico, int resistencia) {
 		super();
@@ -22,6 +19,7 @@ public class Luchador {
 		this.puntosVida = puntosVida;
 		this.ataqueFisico = ataqueFisico;
 		this.resistencia = resistencia;
+		this.puntosVidaActual = puntosVida;
 	}
 
 	public String getNombre() {
@@ -55,6 +53,14 @@ public class Luchador {
 	public void setResistencia(int resistencia) {
 		this.resistencia = resistencia;
 	}
+	public int getPuntosVidaActual() {
+		return puntosVidaActual;
+	}
+
+	public void setPuntosVidaActual(int puntosVidaActual) {
+		this.puntosVidaActual = puntosVidaActual;
+	}
+
 	
 	
 

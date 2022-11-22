@@ -272,7 +272,7 @@ public class Main {
 		
 		 
 	 }
->>>>>>> 57546300c03566651ed85d5cdebdc70606cb037c
+
 
 		boolean b_nube = false;
 		boolean b_barco = false;
@@ -392,7 +392,7 @@ public class Main {
 		char[][] matriz = null;
 		int filasVacias = 0;
 		boolean seguir = true;
-<<<<<<< HEAD
+
 
 		String[] arg = { "-h", "-help" };
 
@@ -406,7 +406,7 @@ public class Main {
 			valorIntroducido = Integer.parseInt(args[1]);
 
 		}
-=======
+
 		
 		String[] arg = {"-h","-help"};
 		
@@ -424,17 +424,17 @@ public class Main {
 		
 			
 			
->>>>>>> 57546300c03566651ed85d5cdebdc70606cb037c
+
 
 		do {
 			System.out.println("Introduzca un número entro 2 y 10");
 
-<<<<<<< HEAD
+
 			if (args.length == 0)
 				valorIntroducido = valor.nextInt();
-=======
+
 			if(args.length == 0)valorIntroducido = valor.nextInt();
->>>>>>> 57546300c03566651ed85d5cdebdc70606cb037c
+
 
 			if (valorIntroducido <= 2 && valorIntroducido >= 10) {
 
@@ -443,13 +443,13 @@ public class Main {
 			}
 		} while (valorIntroducido <= 2 && valorIntroducido >= 10);
 
-<<<<<<< HEAD
+
 		if (seguir) {
-=======
+
 		if(seguir) {
 		
 		matriz = ciudad(valorIntroducido);
->>>>>>> 57546300c03566651ed85d5cdebdc70606cb037c
+
 
 			matriz = ciudad(valorIntroducido);
 
